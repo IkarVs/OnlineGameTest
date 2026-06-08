@@ -1,5 +1,6 @@
 package com.onlinegame.mission;
 
+import com.onlinegame.mission.dto.MissionLogDTO;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -20,12 +21,12 @@ public class MissionController {
     }
 
     @PostMapping("/run")
-    public ResponseEntity<MissionLog> runMission(@RequestBody RunMissionRequest request) {
+    public ResponseEntity<MissionLogDTO> runMission(@RequestBody RunMissionRequest request) {
         return ResponseEntity.ok(missionService.runMission(request.heroId(), request.missionId()));
     }
 
     @GetMapping("/logs/hero/{heroId}")
-    public ResponseEntity<List<MissionLog>> getLogs(@PathVariable Long heroId) {
+    public ResponseEntity<List<MissionLogDTO>> getLogs(@PathVariable Long heroId) {
         return ResponseEntity.ok(missionService.getLogsForHero(heroId));
     }
 

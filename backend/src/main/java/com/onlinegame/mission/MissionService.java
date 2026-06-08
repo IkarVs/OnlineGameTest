@@ -2,7 +2,7 @@ package com.onlinegame.mission;
 
 import com.onlinegame.hero.Hero;
 import com.onlinegame.hero.HeroRepository;
-import com.onlinegame.village.Village;
+import com.onlinegame.mission.dto.MissionLogDTO;
 import com.onlinegame.village.VillageRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class MissionService {
     }
 
     @Transactional
-    public MissionLog runMission(Long heroId, Long missionId) {
+    public MissionLogDTO runMission(Long heroId, Long missionId) {
         Hero hero = heroRepository.findById(heroId)
                 .orElseThrow(() -> new IllegalArgumentException("Héros introuvable"));
         Mission mission = missionRepository.findById(missionId)
@@ -36,11 +36,9 @@ public class MissionService {
             );
         }
 
-        // Gain d'XP et ressources
         hero.addExperience(mission.getXpReward());
         heroRepository.save(hero);
 
-        // Ajout des ressources au village du joueur
         villageRepository.findByPlayer(hero.getPlayer()).ifPresent(village -> {
             village.setWood(village.getWood() + mission.getWoodReward());
             village.setMetal(village.getMetal() + mission.getMetalReward());
@@ -51,12 +49,16 @@ public class MissionService {
         MissionLog log = new MissionLog(hero, mission, true,
                 mission.getXpReward(), mission.getWoodReward(),
                 mission.getMetalReward(), mission.getFoodReward());
-        return missionLogRepository.save(log);
+        return MissionLogDTO.from(missionLogRepository.save(log));
     }
 
-    public List<MissionLog> getLogsForHero(Long heroId) {
+    @Transactional(readOnly = true)
+    public List<MissionLogDTO> getLogsForHero(Long heroId) {
         Hero hero = heroRepository.findById(heroId)
                 .orElseThrow(() -> new IllegalArgumentException("Héros introuvable"));
-        return missionLogRepository.findByHeroOrderByCompletedAtDesc(hero);
+        return missionLogRepository.findByHeroOrderByCompletedAtDesc(hero)
+                .stream()
+                .map(MissionLogDTO::from)
+                .toList();
     }
 }
