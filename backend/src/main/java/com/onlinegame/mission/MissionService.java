@@ -25,7 +25,7 @@ public class MissionService {
 
     @Transactional
     public MissionLog runMission(Long heroId, Long missionId) {
-        Hero hero = heroRepository.findByIdWithDetails(heroId)
+        Hero hero = heroRepository.findById(heroId)
                 .orElseThrow(() -> new IllegalArgumentException("Héros introuvable"));
         Mission mission = missionRepository.findById(missionId)
                 .orElseThrow(() -> new IllegalArgumentException("Mission introuvable"));
