@@ -94,3 +94,43 @@ export interface MissionLog {
   metalGained: number
   foodGained: number
 }
+
+export type CombatStatus = 'ACTIVE' | 'WON' | 'LOST' | 'CAPTURED' | 'FLED'
+
+export interface CombatSpecies {
+  id: number
+  codexNumber: number
+  name: string
+  element: string
+  spriteUrl: string
+}
+
+export interface Combat {
+  id: number
+  heroId: number
+  species: CombatSpecies
+  monsterLevel: number
+  monsterHp: number
+  monsterMaxHp: number
+  heroHp: number
+  heroMaxHp: number
+  status: CombatStatus
+  turn: number
+  log: string[]
+  newCapture: boolean
+}
+
+export interface CodexEntry {
+  id: number
+  codexNumber: number
+  name: string
+  description: string
+  element: string
+  baseHp: number
+  baseAttack: number
+  baseDefense: number
+  captureRate: number
+  minHeroLevel: number
+  spriteUrl: string
+  captured: boolean
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Gloubim : masse gélatineuse couverte d'yeux -->
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="40%">
+      <stop offset="0%" stop-color="#8fd14f"/>
+      <stop offset="100%" stop-color="#4a7a2a"/>
+    </radialGradient>
+  </defs>
+  <path d="M60 25 C90 25 100 55 95 80 C92 98 75 105 60 105 C45 105 28 98 25 80 C20 55 30 25 60 25 Z" fill="url(#g1)" stroke="#2d4a1a" stroke-width="3"/>
+  <path d="M35 95 Q30 110 22 112 M55 103 Q55 114 48 117 M80 97 Q88 110 95 110" stroke="#4a7a2a" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Yeux multiples -->
+  <g>
+    <circle cx="45" cy="50" r="8" fill="#fffbe6"/><circle cx="45" cy="50" r="4" fill="#1a1a2e"/>
+    <circle cx="72" cy="45" r="6" fill="#fffbe6"/><circle cx="72" cy="45" r="3" fill="#1a1a2e"/>
+    <circle cx="60" cy="68" r="10" fill="#fffbe6"/><circle cx="60" cy="68" r="5" fill="#1a1a2e"/>
+    <circle cx="35" cy="72" r="5" fill="#fffbe6"/><circle cx="35" cy="72" r="2.5" fill="#1a1a2e"/>
+    <circle cx="83" cy="68" r="5" fill="#fffbe6"/><circle cx="83" cy="68" r="2.5" fill="#1a1a2e"/>
+    <circle cx="55" cy="35" r="4" fill="#fffbe6"/><circle cx="55" cy="35" r="2" fill="#1a1a2e"/>
+    <circle cx="75" cy="85" r="4" fill="#fffbe6"/><circle cx="75" cy="85" r="2" fill="#1a1a2e"/>
+    <circle cx="45" cy="88" r="3.5" fill="#fffbe6"/><circle cx="45" cy="88" r="1.8" fill="#1a1a2e"/>
+  </g>
+  <ellipse cx="48" cy="38" rx="8" ry="4" fill="#ffffff" opacity="0.25" transform="rotate(-20 48 38)"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Carcosa : oiseau squelettique aux lambeaux jaunes -->
+  <!-- Lambeaux jaunes -->
+  <g fill="#d4a017" stroke="#8a6a0e" stroke-width="2">
+    <path d="M45 50 C30 60 25 85 30 105 L40 92 L43 108 L52 90 L58 104 L62 85 Z"/>
+    <path d="M75 50 C90 60 95 85 90 105 L80 92 L77 108 L68 90 Z"/>
+  </g>
+  <!-- Corps squelettique -->
+  <ellipse cx="60" cy="55" rx="16" ry="22" fill="#e8e3d3" stroke="#9a937f" stroke-width="2.5"/>
+  <!-- Côtes -->
+  <path d="M48 48 Q60 54 72 48 M48 56 Q60 62 72 56 M50 64 Q60 69 70 64" stroke="#9a937f" stroke-width="2" fill="none"/>
+  <!-- Cou et crâne d'oiseau -->
+  <path d="M60 35 Q58 26 60 18" stroke="#e8e3d3" stroke-width="6" fill="none"/>
+  <circle cx="61" cy="14" r="9" fill="#e8e3d3" stroke="#9a937f" stroke-width="2"/>
+  <!-- Bec -->
+  <path d="M68 13 L86 17 L68 20 Z" fill="#c9b896" stroke="#9a937f" stroke-width="1.5"/>
+  <!-- Orbite creuse -->
+  <circle cx="62" cy="12" r="3.5" fill="#1a1a2e"/>
+  <circle cx="63" cy="11" r="1.2" fill="#e8c547"/>
+  <!-- Ailes squelettiques -->
+  <g stroke="#9a937f" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M45 45 C28 35 15 38 8 48 M12 46 L20 52 M22 42 L28 50 M32 39 L36 48"/>
+    <path d="M75 45 C92 35 105 38 112 48 M108 46 L100 52 M98 42 L92 50 M88 39 L84 48"/>
+  </g>
+  <!-- Pattes -->
+  <path d="M54 76 L52 95 M52 95 L46 102 M52 95 L56 103 M66 76 L68 95 M68 95 L62 103 M68 95 L74 102" stroke="#9a937f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Ombre allongée -->
+  <ellipse cx="60" cy="112" rx="40" ry="4" fill="#1a1a2e" opacity="0.5"/>
+</svg>

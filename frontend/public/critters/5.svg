@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Profondin : poisson bipède au trident de corail -->
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#1a6b66"/>
+    </linearGradient>
+  </defs>
+  <!-- Trident -->
+  <g stroke="#ff8c69" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M95 100 L95 35"/>
+    <path d="M87 42 L87 28 M95 38 L95 24 M103 42 L103 28"/>
+    <path d="M87 42 Q95 48 103 42"/>
+  </g>
+  <!-- Jambes -->
+  <path d="M48 88 L44 108 L36 108 M64 88 L68 108 L76 108" stroke="#1a6b66" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Corps -->
+  <ellipse cx="56" cy="62" rx="24" ry="30" fill="url(#g5)" stroke="#0e4744" stroke-width="3"/>
+  <!-- Écailles -->
+  <g fill="none" stroke="#0e4744" stroke-width="1.2" opacity="0.6">
+    <path d="M42 60 Q47 64 52 60 M52 60 Q57 64 62 60 M62 60 Q67 64 72 60"/>
+    <path d="M45 72 Q50 76 55 72 M55 72 Q60 76 65 72"/>
+  </g>
+  <!-- Nageoire dorsale -->
+  <path d="M50 33 L44 15 L54 25 L58 10 L64 25 L72 16 L66 34 Z" fill="#2a9d8f" stroke="#0e4744" stroke-width="2"/>
+  <!-- Tête -->
+  <circle cx="48" cy="48" r="7" fill="#fffbe6"/><circle cx="48" cy="48" r="3.5" fill="#0a0a12"/>
+  <circle cx="68" cy="48" r="7" fill="#fffbe6"/><circle cx="68" cy="48" r="3.5" fill="#0a0a12"/>
+  <!-- Branchies -->
+  <path d="M38 58 Q35 62 38 66 M34 56 Q30 62 34 68" stroke="#0e4744" stroke-width="2" fill="none"/>
+  <!-- Bouche -->
+  <path d="M48 70 Q58 78 68 70" stroke="#0e4744" stroke-width="2.5" fill="none"/>
+  <path d="M52 72 L52 76 M58 74 L58 78 M64 72 L64 76" stroke="#fffbe6" stroke-width="1.8"/>
+  <!-- Bras tenant le trident -->
+  <path d="M78 62 Q90 70 95 75" stroke="#1a6b66" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

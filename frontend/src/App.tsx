@@ -5,6 +5,8 @@ import CharacterPage from './pages/CharacterPage'
 import VillagePage from './pages/VillagePage'
 import MissionsPage from './pages/MissionsPage'
 import InventoryPage from './pages/InventoryPage'
+import CombatPage from './pages/CombatPage'
+import CodexPage from './pages/CodexPage'
 import { useGameStore } from './stores/gameStore'
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -34,6 +36,14 @@ export default function App() {
           <Route
             path="/inventory"
             element={<ProtectedRoute><InventoryPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/combat"
+            element={<ProtectedRoute><CombatPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/codex"
+            element={<ProtectedRoute><CodexPage /></ProtectedRoute>}
           />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />

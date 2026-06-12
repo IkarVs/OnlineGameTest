@@ -6,6 +6,8 @@ const links = [
   { to: '/character', label: '⚔️ Héros' },
   { to: '/missions', label: '🗺️ Missions' },
   { to: '/inventory', label: '🎒 Inventaire' },
+  { to: '/combat', label: '👾 Combat' },
+  { to: '/codex', label: '📖 Codex' },
 ]
 
 export default function Navbar() {

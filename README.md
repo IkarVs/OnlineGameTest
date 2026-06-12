@@ -167,6 +167,12 @@ OnlineGameTest/
 | GET      | `/api/villages/player/{id}`                       | Détail du village                                 |
 | POST     | `/api/villages/player/{id}/collect`               | Collecte les ressources accumulées                |
 | POST     | `/api/villages/player/{id}/buildings/{type}/upgrade` | Améliore un bâtiment                          |
+| POST     | `/api/combats/start`                              | Démarre un combat contre un God Critter aléatoire |
+| POST     | `/api/combats/{id}/attack`                        | Attaque de base                                   |
+| POST     | `/api/combats/{id}/technique/{tid}`               | Utilise une technique apprise                     |
+| POST     | `/api/combats/{id}/capture`                       | Tentative de capture (façon Pokémon)              |
+| POST     | `/api/combats/{id}/flee`                          | Tentative de fuite                                |
+| GET      | `/api/critters/codex/player/{id}`                 | Codex complet (espèces masquées si non capturées) |
 
 ---
 
@@ -189,6 +195,14 @@ OnlineGameTest/
 - Récompenses immédiates en XP et ressources
 - Les ressources vont directement dans le village du joueur
 - Historique des 10 dernières missions affiché
+
+### Combat & God Critters
+- Combat **tour par tour** contre 10 créatures lovecraftiennes (les God Critters)
+- Actions : Attaquer, Technique (parmi celles apprises), Capturer, Fuir
+- **Capture façon Pokémon** : plus la créature est blessée, plus la chance de capture augmente
+- Rencontres aléatoires adaptées au niveau du héros (les créatures puissantes exigent un niveau élevé)
+- **Codex** : encyclopédie des 10 créatures — silhouettes mystérieuses tant qu'elles ne sont pas capturées
+- Victoire = XP ; sprites SVG 2D dans `frontend/public/critters/`
 
 ---
 
