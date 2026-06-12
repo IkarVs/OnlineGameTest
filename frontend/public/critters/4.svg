@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Myskatos : papillon de nuit aux symboles mouvants -->
+  <defs>
+    <radialGradient id="g4" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#6b5b95"/>
+      <stop offset="100%" stop-color="#2e2452"/>
+    </radialGradient>
+  </defs>
+  <!-- Ailes -->
+  <g fill="url(#g4)" stroke="#1a1433" stroke-width="2.5">
+    <path d="M55 55 C30 25 5 30 8 50 C10 65 30 70 50 65 Z"/>
+    <path d="M65 55 C90 25 115 30 112 50 C110 65 90 70 70 65 Z"/>
+    <path d="M55 62 C35 75 20 95 30 102 C40 107 52 88 57 72 Z"/>
+    <path d="M65 62 C85 75 100 95 90 102 C80 107 68 88 63 72 Z"/>
+  </g>
+  <!-- Symboles sur les ailes -->
+  <g fill="none" stroke="#e8c547" stroke-width="1.8" opacity="0.9">
+    <circle cx="28" cy="47" r="6"/>
+    <path d="M25 47 L31 47 M28 44 L28 50"/>
+    <circle cx="92" cy="47" r="6"/>
+    <path d="M89 44 L95 50 M95 44 L89 50"/>
+    <path d="M40 88 L46 82 L43 92 Z"/>
+    <path d="M80 88 L74 82 L77 92 Z"/>
+  </g>
+  <!-- Corps -->
+  <ellipse cx="60" cy="62" rx="8" ry="22" fill="#3d3258" stroke="#1a1433" stroke-width="2.5"/>
+  <path d="M60 42 L52 28 M60 42 L68 28" stroke="#e8c547" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="52" cy="27" r="2.5" fill="#e8c547"/>
+  <circle cx="68" cy="27" r="2.5" fill="#e8c547"/>
+  <!-- Yeux -->
+  <circle cx="56" cy="48" r="3.5" fill="#ff6ec7"/>
+  <circle cx="64" cy="48" r="3.5" fill="#ff6ec7"/>
+  <!-- Segments -->
+  <path d="M53 60 L67 60 M53 68 L67 68 M55 76 L65 76" stroke="#1a1433" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Yog-Sothi : amas de sphères luminescentes reliées par des filaments -->
+  <defs>
+    <radialGradient id="g9a" cx="40%" cy="35%">
+      <stop offset="0%" stop-color="#b8e0ff"/>
+      <stop offset="60%" stop-color="#4d9fff"/>
+      <stop offset="100%" stop-color="#1a3a8a"/>
+    </radialGradient>
+    <radialGradient id="g9b" cx="40%" cy="35%">
+      <stop offset="0%" stop-color="#ffd6f5"/>
+      <stop offset="60%" stop-color="#c44dff"/>
+      <stop offset="100%" stop-color="#4a1a8a"/>
+    </radialGradient>
+  </defs>
+  <!-- Filaments d'énergie -->
+  <g stroke="#7fd4ff" stroke-width="1.8" fill="none" opacity="0.8">
+    <path d="M45 45 Q60 30 78 42"/>
+    <path d="M45 45 Q50 65 65 75"/>
+    <path d="M78 42 Q85 60 65 75"/>
+    <path d="M45 45 Q30 60 38 80"/>
+    <path d="M38 80 Q50 85 65 75"/>
+    <path d="M78 42 Q95 55 88 78"/>
+    <path d="M88 78 Q78 85 65 75"/>
+    <path d="M30 30 Q38 38 45 45"/>
+    <path d="M90 25 Q85 33 78 42"/>
+  </g>
+  <!-- Sphères -->
+  <circle cx="45" cy="45" r="16" fill="url(#g9a)"/>
+  <circle cx="78" cy="42" r="13" fill="url(#g9b)"/>
+  <circle cx="65" cy="75" r="15" fill="url(#g9a)"/>
+  <circle cx="38" cy="80" r="10" fill="url(#g9b)"/>
+  <circle cx="88" cy="78" r="9" fill="url(#g9a)"/>
+  <circle cx="30" cy="30" r="7" fill="url(#g9b)"/>
+  <circle cx="90" cy="25" r="6" fill="url(#g9a)"/>
+  <!-- Halos -->
+  <circle cx="45" cy="45" r="20" fill="none" stroke="#7fd4ff" stroke-width="1" opacity="0.4"/>
+  <circle cx="65" cy="75" r="19" fill="none" stroke="#c44dff" stroke-width="1" opacity="0.4"/>
+  <!-- Yeux dans les sphères -->
+  <circle cx="45" cy="45" r="4" fill="#0a0a12"/><circle cx="46.5" cy="43.5" r="1.3" fill="#ffffff"/>
+  <circle cx="78" cy="42" r="3" fill="#0a0a12"/><circle cx="79" cy="41" r="1" fill="#ffffff"/>
+  <circle cx="65" cy="75" r="3.5" fill="#0a0a12"/><circle cx="66" cy="74" r="1.2" fill="#ffffff"/>
+  <!-- Étincelles -->
+  <g fill="#fffbe6">
+    <circle cx="58" cy="20" r="1.5"/>
+    <circle cx="105" cy="50" r="1.2"/>
+    <circle cx="15" cy="55" r="1.2"/>
+    <circle cx="55" cy="100" r="1.5"/>
+    <circle cx="98" cy="95" r="1"/>
+  </g>
+</svg>

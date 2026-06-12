@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Dagonnet : crustacé colossal aux ruines sur la carapace -->
+  <defs>
+    <linearGradient id="g8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c1666b"/>
+      <stop offset="100%" stop-color="#7a3b3f"/>
+    </linearGradient>
+  </defs>
+  <!-- Pattes -->
+  <g stroke="#5c2c2f" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M30 75 L14 85 L10 96"/>
+    <path d="M32 84 L20 96 L18 106"/>
+    <path d="M90 75 L106 85 L110 96"/>
+    <path d="M88 84 L100 96 L102 106"/>
+  </g>
+  <!-- Pinces -->
+  <path d="M25 60 C12 52 5 58 8 68 C12 62 18 62 24 66 Z" fill="#a3494e" stroke="#5c2c2f" stroke-width="2.5"/>
+  <path d="M95 60 C108 52 115 58 112 68 C108 62 102 62 96 66 Z" fill="#a3494e" stroke="#5c2c2f" stroke-width="2.5"/>
+  <!-- Carapace -->
+  <path d="M60 38 C90 38 100 62 95 80 C90 92 75 96 60 96 C45 96 30 92 25 80 C20 62 30 38 60 38 Z" fill="url(#g8)" stroke="#5c2c2f" stroke-width="3"/>
+  <!-- Ruines miniatures sur la carapace -->
+  <g fill="#d9cfc1" stroke="#8a8074" stroke-width="1.5">
+    <rect x="40" y="42" width="8" height="16"/>
+    <path d="M38 42 L44 32 L50 42 Z"/>
+    <rect x="56" y="38" width="10" height="20"/>
+    <path d="M54 38 L61 26 L68 38 Z"/>
+    <rect x="74" y="44" width="7" height="14"/>
+    <path d="M72 44 L77.5 35 L83 44 Z"/>
+    <rect x="49" y="48" width="4" height="10" fill="#5c2c2f" stroke="none"/>
+    <rect x="59" y="44" width="3" height="5" fill="#5c2c2f" stroke="none"/>
+    <rect x="62" y="44" width="3" height="5" fill="#5c2c2f" stroke="none"/>
+  </g>
+  <!-- Yeux pédonculés -->
+  <path d="M45 70 L40 80 M75 70 L80 80" stroke="#5c2c2f" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="40" cy="82" r="5" fill="#fffbe6" stroke="#5c2c2f" stroke-width="2"/>
+  <circle cx="40" cy="82" r="2.2" fill="#0a0a12"/>
+  <circle cx="80" cy="82" r="5" fill="#fffbe6" stroke="#5c2c2f" stroke-width="2"/>
+  <circle cx="80" cy="82" r="2.2" fill="#0a0a12"/>
+  <!-- Bouche / mandibules -->
+  <path d="M52 90 Q60 96 68 90" stroke="#5c2c2f" stroke-width="2.5" fill="none"/>
+</svg>

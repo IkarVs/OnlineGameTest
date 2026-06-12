@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { createHero, getHeroesByPlayer, unlockTechnique } from '../api/heroApi'
+import { createHero, unlockTechnique } from '../api/heroApi'
 import { getTechniques } from '../api/techniqueApi'
 import { useGameStore } from '../stores/gameStore'
 import XpBar from '../components/XpBar'

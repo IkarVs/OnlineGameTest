@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Tentaculon : enchevêtrement de tentacules avec un œil unique -->
+  <defs>
+    <radialGradient id="g2" cx="50%" cy="35%">
+      <stop offset="0%" stop-color="#a673d9"/>
+      <stop offset="100%" stop-color="#5d3a8a"/>
+    </radialGradient>
+  </defs>
+  <!-- Tentacules -->
+  <g stroke="#3d2460" stroke-width="2.5" fill="#7a4fb3">
+    <path d="M40 70 C20 80 12 100 18 112 C22 104 30 95 42 92 Z"/>
+    <path d="M50 78 C45 95 35 108 38 116 C46 108 54 98 58 88 Z"/>
+    <path d="M70 78 C75 95 85 108 82 116 C74 108 66 98 62 88 Z"/>
+    <path d="M80 70 C100 80 108 100 102 112 C98 104 90 95 78 92 Z"/>
+    <path d="M35 55 C18 50 8 58 5 70 C14 66 26 64 38 66 Z"/>
+    <path d="M85 55 C102 50 112 58 115 70 C106 66 94 64 82 66 Z"/>
+  </g>
+  <!-- Corps -->
+  <ellipse cx="60" cy="55" rx="32" ry="35" fill="url(#g2)" stroke="#3d2460" stroke-width="3"/>
+  <!-- Ventouses -->
+  <circle cx="30" cy="100" r="2" fill="#d9b3ff"/><circle cx="46" cy="105" r="2" fill="#d9b3ff"/>
+  <circle cx="74" cy="105" r="2" fill="#d9b3ff"/><circle cx="90" cy="100" r="2" fill="#d9b3ff"/>
+  <!-- Œil unique -->
+  <circle cx="60" cy="52" r="16" fill="#fffbe6" stroke="#3d2460" stroke-width="2"/>
+  <circle cx="60" cy="52" r="8" fill="#e63946"/>
+  <circle cx="60" cy="52" r="3.5" fill="#1a1a2e"/>
+  <circle cx="56" cy="48" r="2" fill="#ffffff"/>
+  <ellipse cx="45" cy="32" rx="9" ry="4" fill="#ffffff" opacity="0.25" transform="rotate(-25 45 32)"/>
+</svg>

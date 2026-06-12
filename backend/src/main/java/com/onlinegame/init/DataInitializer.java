@@ -1,5 +1,7 @@
 package com.onlinegame.init;
 
+import com.onlinegame.critter.CritterSpecies;
+import com.onlinegame.critter.CritterSpeciesRepository;
 import com.onlinegame.item.Item;
 import com.onlinegame.item.ItemRepository;
 import com.onlinegame.item.ItemType;
@@ -20,12 +22,52 @@ public class DataInitializer implements CommandLineRunner {
     private final MissionRepository missionRepository;
     private final ItemRepository itemRepository;
     private final TechniqueRepository techniqueRepository;
+    private final CritterSpeciesRepository critterSpeciesRepository;
 
     @Override
     public void run(String... args) {
         initMissions();
         initItems();
         initTechniques();
+        initCritters();
+    }
+
+    private void initCritters() {
+        if (critterSpeciesRepository.count() > 0) return;
+        log.info("Initialisation des God Critters...");
+
+        critterSpeciesRepository.save(new CritterSpecies(1, "Gloubim",
+                "Une petite masse gélatineuse couverte d'yeux. Inoffensif en apparence, il murmure des vérités oubliées à ceux qui l'écoutent trop longtemps.",
+                "ABIME", 30, 8, 4, 0.7, 1, 25, "/critters/1.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(2, "Tentaculon",
+                "Un enchevêtrement de tentacules violacés surmonté d'un œil unique. Il se déplace en rampant et laisse derrière lui une trace luisante.",
+                "ABIME", 40, 12, 6, 0.6, 1, 35, "/critters/2.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(3, "Shoggolin",
+                "Une bulle de protoplasme noir constellée de bouches qui chantent en chœur. Son chant rend les récoltes étranges.",
+                "OMBRE", 50, 10, 10, 0.55, 2, 45, "/critters/3.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(4, "Myskatos",
+                "Un papillon de nuit aux ailes couvertes de symboles mouvants. Le fixer trop longtemps donne des rêves de cités englouties.",
+                "REVE", 35, 15, 3, 0.5, 3, 55, "/critters/4.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(5, "Profondin",
+                "Un poisson bipède aux écailles iridescentes. Il porte un trident de corail et exige un tribut en nourriture.",
+                "OCEAN", 60, 14, 8, 0.45, 4, 70, "/critters/5.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(6, "Carcosa",
+                "Un oiseau squelettique drapé de lambeaux jaunes. Là où il se pose, les ombres s'allongent anormalement.",
+                "OMBRE", 55, 18, 6, 0.4, 5, 85, "/critters/6.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(7, "Nyarlatho",
+                "Une silhouette féline composée de fumée noire, dotée de trop de pattes. Il apparaît toujours là où on ne regarde pas.",
+                "CHAOS", 65, 20, 9, 0.35, 7, 110, "/critters/7.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(8, "Dagonnet",
+                "Un crustacé colossal incrusté de ruines miniatures. Des civilisations entières prient sur sa carapace.",
+                "OCEAN", 90, 16, 15, 0.3, 9, 140, "/critters/8.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(9, "Yog-Sothi",
+                "Un amas de sphères luminescentes reliées par des filaments d'énergie. Il existe dans plusieurs dimensions à la fois.",
+                "COSMOS", 80, 24, 10, 0.25, 11, 180, "/critters/9.svg"));
+        critterSpeciesRepository.save(new CritterSpecies(10, "Cthulhito",
+                "Le rejeton assoupi d'un dieu ancien. Sa tête de poulpe et ses ailes membraneuses inspirent une terreur primale. Capture quasi impossible.",
+                "ABIME", 120, 28, 14, 0.15, 13, 250, "/critters/10.svg"));
+
+        log.info("God Critters créés : {}", critterSpeciesRepository.count());
     }
 
     private void initMissions() {
